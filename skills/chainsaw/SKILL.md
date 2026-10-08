@@ -157,6 +157,17 @@ Also ask for confirmation before running any other command that can access, crea
 
 Do not bypass this rule by combining a cluster command with another command.
 
+### Cluster remediation
+
+Never assume that a remediation command is required.
+
+If remediation is needed:
+- explain the problem;
+- explain the proposed command;
+- ask for confirmation before running it.
+
+This applies especially to commands that delete, patch, replace, or modify Kubernetes resources.
+
 ### Before `chainsaw test`
 
 First validate the test locally.
@@ -197,6 +208,13 @@ If only lint was run, state:
 ## Failure analysis
 
 Classify failures before changing the test.
+
+Do not diagnose a cluster failure without evidence.
+
+If cleanup fails:
+- report the exact Chainsaw error;
+- classify it as a possible cluster or environment issue when appropriate;
+- do not claim a specific cause unless it was verified.
 
 Possible failure types:
 
