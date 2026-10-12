@@ -1,8 +1,7 @@
 ---
-
 name: chainsaw
 description: Create and validate Kyverno Chainsaw tests. Use this skill when creating, modifying, reviewing, debugging, or validating Chainsaw tests or Kyverno tests that use Chainsaw.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # Chainsaw
 
